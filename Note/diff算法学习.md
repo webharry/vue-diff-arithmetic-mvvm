@@ -29,7 +29,7 @@ let Vnode = {
 
 ## 三、那么diff算法如何实现呢？
 diff的过程就是调用名为patch的函数，比较新旧节点，一边比较一边给真实DOM打补丁。在采取diff算法比较新旧节点时，只会在同一层级节点进行比较，不会跨层比较，以最小操作步骤更新节点变化到真正的DOM树，所以算法复杂度是O(n)。如下图：
-![img](../img/diff.png)
+![img](http://chuantu.xyz/t6/739/1595078073x992248267.png)
 
 ### 1、path方法
 diff比较规则说明：
@@ -263,7 +263,7 @@ oldStartIdx 指向 oldStartNode，
 oldEndIdx 指向 oldEndNode，
 newStartIdx 指向 newStartNode，
 newEndIdx 指向 newEndNode，如下图：
-![img](../img/1.png)
+![img](http://chuantu.xyz/t6/739/1595078137x992248267.png)
 
 在遍历过程中，如果存在key,且满足sameVnode，会将该DOM节点进行复用，否则会创建一个新的DOM节点
 
@@ -354,6 +354,7 @@ function updateChildren (parentElm, oldCh, newCh, insertedVnodeQueue, removeOnly
 ```
 
 # 总结
-最后，对diff算法的流程进行一个总结，如下图：
-![img](../img/diff.png)
+最后，对diff算法的流程进行一个总结,网上找了一张图如下：
+![img](http://chuantu.xyz/t6/739/1595078194x-1224481926.png)
+
 
