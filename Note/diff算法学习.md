@@ -355,6 +355,6 @@ function updateChildren (parentElm, oldCh, newCh, insertedVnodeQueue, removeOnly
 
 # 总结
 最后，对diff算法的流程进行一个总结,网上找了一张图如下：
-![img](http://chuantu.xyz/t6/739/1595078194x-1224481926.png)
+![img](http://chuantu.xyz/t6/739/1595078589x-1224475230.png)
 
 
